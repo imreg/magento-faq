@@ -1,0 +1,31 @@
+<h4><?php echo $this->__('Help and Support') ?></h4>
+<?php $items = $this->getItems(); ?>
+<ul id="accordion">
+	<?php foreach ($items as $item): ?>	
+		<li><a href="#" title="<?php echo $item->getQuestion()?>" ><?php echo $item->getQuestion()?></a></li>
+		<ul>
+			<li>
+				<div class="answer">
+					<span><p><?php echo $item->getAnswer()?></p></span>
+				</div>
+				<div id="feedback_<?php echo $item->getSupportId()?>" class="helpful-feedback">
+					<p>Did you find this helpful?</p>
+					<span>
+						<button id="yes_<?php echo $item->getSupportId()?>" class="button">
+							<span>Yes</span>
+						</button>
+						<button id="no_<?php echo $item->getSupportId()?>" class="button">
+							<span>No</span>
+						</button>
+					</span>
+				</div>
+			</li>
+		</ul>		
+	<?php endforeach;?>
+</ul> 
+<script type="text/javascript">
+	var support = jQuery.fn.Support();
+	support.Accordion();
+	support.FeedBack();
+</script>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hand_Support>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Hand_Support>
+    </modules>
+</config> 

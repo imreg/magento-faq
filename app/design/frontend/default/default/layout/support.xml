@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <support_index_index translate="label">
+        <label>Help and Support</label>
+       	<reference name="head">
+            <action method="setTitle" translate="title"><title>Help and Support</title></action>
+    		<action method="addJs" name="support"><script>hand/support/jquery-2.0.3.min.js</script></action>
+    		<action method="addJs" name="support"><script>hand/support/support.js</script></action>
+            <action method="addCss"><stylesheet>css/support.css</stylesheet></action>    		
+        </reference>        
+        <reference name="content">
+            <block type="support/support" name="support" template="support/support.phtml" />
+        </reference>
+    </support_index_index>
+    <support_ajax_index>
+        <reference name="content">
+            <block type="support/support" name="ajax" template="support/ajax.phtml" />
+        </reference>
+    </support_ajax_index>
+</layout> 

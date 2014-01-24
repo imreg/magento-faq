@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+	<menu>
+		<support module="support">
+			<title>Support</title>
+			<sort_order>71</sort_order>
+			<children>
+				<items module="support">
+					<title>Help and Support</title>
+					<sort_order>0</sort_order>
+					<action>support/adminhtml_support</action>
+				</items>
+			</children>
+		</support>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<Hand_Support>
+						<title>Support Module</title>
+						<sort_order>10</sort_order>
+					</Hand_Support>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+	<layout>
+		<updates>
+			<support>
+				<file>support.xml</file>
+			</support>
+		</updates>
+	</layout>
+</config>
+

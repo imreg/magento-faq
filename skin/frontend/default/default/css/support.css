@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+#accordion {
+        list-style: none;
+        padding: 0 0 0 0;
+        width: 400px;
+}
+#accordion li{
+	display: block;
+    background-color: #415966;
+    font-weight: bold;
+    margin: 1px;
+    cursor: pointer;
+	padding-left: 10px;
+    list-style: circle;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+#accordion ul {
+    list-style: none;
+    padding: 0 0 0 0;
+    display: none;
+}
+#accordion ul li{
+    font-weight: normal;
+    cursor: auto;
+    background-color: #E7F6FF;
+    padding: 0 0 0 7px;
+}
+#accordion a {
+	color: #B6D1E2;
+    text-decoration: none;
+}
+#accordion a:hover {
+    text-decoration: underline;
+}
+div.answer {
+	padding: 10px 0 10px 0;
+}
+div.helpful-feedback {
+	text-align: right;
+	margin-right: 20px;
+	padding-bottom: 5px;
+}
+ul li div.helpful-feedback button.button {
+	 -moz-border-radius: 2px;
+     -webkit-border-radius: 2px;
+     border-radius: 2px;
+}
+ul li div.helpful-feedback button.button span {
+    background: url("../images/btn_search.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-position: 100% 0;
+    padding: 0 6px 0 6px;
+    border: 0 none;
+    font: bold 11px/21px Tahoma,Verdana,Arial,sans-serif;
+    height: 21px;
+    width: 50px;
+}
+ul li div.message {
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+ul li div.message p {
+	margin: 0;
+}
+div.error {
+	color: #FF0000;
+}
+div.successful {
+	color: #3F5F81;
+}
